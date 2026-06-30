@@ -30,7 +30,7 @@ defmodule Formula2.MixProject do
       aliases: aliases(),
       deps: [
         {:stream_data, "~> 0.5"},
-        {:decimal, "~> 1.6 or ~> 2.0"},
+        {:decimal, "~> 1.6 or ~> 2.0 or ~> 3.0"},
         {:ex_doc, ">= 0.0.0", only: :dev, runtime: false}
       ]
     ]
