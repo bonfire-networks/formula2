@@ -4,7 +4,7 @@ defmodule Formula2.MixProject do
   def project do
     [
       app: :formula2,
-      version: "0.1.0",
+      version: "0.1.1",
       elixir: "~> 1.10",
       description:
         "(LISP) style formula parser & evaluator (at runtime) with support for variables and (safe) custom functions",
@@ -29,7 +29,7 @@ defmodule Formula2.MixProject do
       start_permanent: Mix.env() == :prod,
       aliases: aliases(),
       deps: [
-        {:stream_data, "~> 0.5"},
+        {:stream_data, "~> 0.5 or ~> 1.0"},
         {:decimal, "~> 1.6 or ~> 2.0 or ~> 3.0"},
         {:ex_doc, ">= 0.0.0", only: :dev, runtime: false}
       ]
